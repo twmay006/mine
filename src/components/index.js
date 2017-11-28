@@ -1,5 +1,5 @@
-import hello from './HelloWorld'
+import HelloWorld from './HelloWorld'
 
 export default {
-    hello
+    HelloWorld
 }

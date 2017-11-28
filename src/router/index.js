@@ -1,15 +1,23 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld'
 import section from '@/pages/common/section'
-Vue.use(Router)
 
-export default new Router({
-  routes: [
+let routes = [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: section
+        path: '/',
+        iconClass: 'el-icon-menu',
+        component: section,
+        hidden: true,
+        children: [
+            {
+                path: '/',
+                name: '首页',
+                // meta: {
+                //     auth: true,
+                //     access: ['add', 'edit', 'delete']
+                // },
+                // component: resolve => require(['../pages/index'], resolve),
+                alias: '/index'
+            }
+        ]
     }
-  ]
-})
+]
+export default routes

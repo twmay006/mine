@@ -6,7 +6,7 @@ const path = require('path')
 
 module.exports = {
     dev: {
-        port: 1234, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+        port: 7777, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
         autoOpenBrowser: true,
 
         // Paths
